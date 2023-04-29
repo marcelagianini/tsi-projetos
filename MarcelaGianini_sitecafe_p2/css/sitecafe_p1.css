@@ -1,0 +1,271 @@
+@import url;
+
+
+body {
+    font-family: Verdana, Liberation Serif Regular, sans-serif;
+    font-size: 16px;
+    font-color:#FFEEBB;
+}
+
+p{
+    color:#FFEEBB;
+}
+header{
+    display: block; 
+    margin-bottom: 1px;
+}
+
+section {
+  display: block;
+  width: 77%; 
+  float: right;
+
+}
+#imgLogo{
+  border-bottom: 3px;
+  margin-bottom: 6px;
+  padding-bottom: 15px;
+  
+}
+
+.ender img{
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #FFEEBB;
+}
+.ender p {
+		float: right;
+    font-size: 16px;
+    line-height: 150%;
+    color:#FFEEBB;
+}
+
+
+/*MENU*/
+nav{
+    display: block;
+    width: 20%;
+    float: left;
+    
+
+  }
+ul, ol{
+    line-height: 200%;
+}
+
+#ul-nav{
+    font: Liberation Serif Regular, sans-serif;
+    color: #FFEEBB;
+    margin-top: 30px;
+    list-style-type: circle;
+}
+
+
+a :link{
+    color:#FFEEBB;
+}
+a :visited{
+     color:#DDCC99;
+}
+a :hover , :focus{
+     color:#DDCC99;
+}
+
+a :active{
+    color:#FFEEBB;
+}
+
+
+a{
+   text-decoration: none;
+   background-color: ;
+   color: #FFEEBB;
+   
+} 
+
+
+
+/*MAINpage*/
+}
+
+    .apres{
+    text-align: center;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+        .apres img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 420px;
+
+        }
+        .apres p {
+            color:#FFEEBB;
+        }
+
+
+
+
+
+/*PAG-HISTORIA*/ 
+        section .menu-historia{
+            text-align: justify;
+        }
+
+section h1 {
+     color:#FFEEBB;
+
+}
+section .historia  {
+    text-align: justify;
+    color:#FFEEBB;    
+
+}
+section .imgesq{
+    margin: 12px, 0px, 4px, 12px;
+    float: right;
+}
+
+section .imgdir{
+    margin: 12px, 12px, 4px, 0px;
+    float: left;
+}
+
+.fonte {
+    text-align: right;
+    font-style: italic;
+}
+
+/*PAG-Saches*/
+
+.pag_sache {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+
+}
+.pag_sache h1 {
+  font-family: "LiberationSerif";
+  color: #ffeebb;
+  padding-bottom: 20px;
+}
+.pag_sache a {
+  display: block;
+  color: #ffeebb;
+
+}
+.pag_sache ul {
+  color: #ffeebb;
+  line-height: 200%;
+  list-style: circle;
+  padding-left: 40px;
+}
+.pag_sache ol {
+  color: #ffeebb;
+  line-height: 200%;
+}
+
+
+
+/*PAG-MAQUINAS*/
+
+section .tabInfo {
+    border: solid, thin;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    margin-top: 6px;
+    font: Arial, Ubuntu, sans-serif;
+    text-decoration-color: #573218;
+}
+section td th {
+    border: 2px, solid;
+    border-color: #664422;
+    padding: 6px 12px 6px 12px;
+}
+
+section .linTH {
+
+    color: #FFFFFF;
+    background-color: #907968;
+    vertical-align: middle;
+}
+
+section .colTH{
+    color: #573218;
+    background-color: #EACEAC;
+    text-align: left;
+}
+
+section .preco {
+    color: #CC0000;
+    text-decoration: bold;
+    text-align: middle;   
+}
+
+.tabInfo 
+
+a :link{
+    color:#573218;
+}
+a :visited{
+     color:#3b210f;
+}
+a :hover , :focus{
+     color:#573218;
+}
+
+a :active{
+    color:#573218;
+}
+
+/*PAG-COMPRAS*/
+
+
+form {
+    float: right;
+    margin-right: 500px;
+}
+
+fieldset{
+    background-color: #907968;
+    font-size: 14px;
+}
+
+.fsForm{
+    width: 524px;
+    clear: both;
+}
+
+.fsResEsq{
+    width: 200px;
+    height: 280px;
+    float: left;
+}
+.fsResDir{
+    width: 280px;
+    height: 280px;
+    float: right;
+}
+
+
+label{
+    display: inline-block;
+}
+textarea {
+   resize: none;
+}
+optgroup {
+    color: black;
+}
+/*div .geralForm{
+    float: center;
+    margin-right: 500px;
+}*/
+
+.botoesForm {
+  margin-left: 425px 
+}
+

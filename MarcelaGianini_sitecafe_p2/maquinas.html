@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expresso do café</title>
+	<link rel="stylesheet" type="text/css" href="css/sitecafe_p1.css" />
+</head>
+<header>
+<body background="img/Fundo.jpg">
+<div id= "ender" class="ender">
+<img src = "img/Logo_Pequeno.png"/> 
+<p>Avenidade Mochaccino, 10<br> Tel:(21) 1234-5678<br> contato@coffee.com.br</p>
+
+</div> 
+<nav>
+	<ul id="ul-nav">
+		<li><a class="a-menu" href="index.html">Inicial</a></li>
+		<li><a class="a-menu" href="historia.html">Histórias</a></li>
+		<li><a class="a-menu" href="maquinas.html">Máquinas</a></li>
+		<li><a class="a-menu" href="saches.html">Sachês</a></li>
+		<li><a class="a-menu"href="compras.html">Compras</a></li>
+
+	</ul>
+</nav>
+</header>
+
+<section >
+
+<style>
+.tabInfo {border: solid, thin; background-color: #FFFFFF; border-collapse: collapse; margin-top: 6px; font: Arial, Ubuntu,sans-serif; text-decoration-color: #573218;}
+ td, th {border:  solid 2px #664422; padding: 6px 12px 6px 12px;}
+ .linTH {color: #FFFFFF;  background-color: #907968; text-align: middle;}
+ .colTH {color: #573218;  background-color: #EACEAC;text-align: left;}
+ .preco {color: #CC0000 bold; text-align: middle;}
+ a {text-decoration-color:#573218
+ ; a: link: #573218;}
+
+</style>	
+
+
+
+<table class="tabInfo" border="1">
+<th class="linTH" colspan="4">
+    Máquinas de café</br>
+
+<tr class="linTH">
+    <td>Tipo</td> 
+    <td>Modelo</td>
+    <td>Foto</td>
+    <td>Preço</td>
+</tr>
+
+<tr>
+    <style> a :link{
+    color:#754c20;
+}
+a :visited{
+     color:#754c20;
+}
+a :hover , :focus{
+     color:#754c20;
+}
+
+a :active{
+    color:#754c20;
+}
+</style>
+    <th class="colTH">Dolce Gusto</th>
+    <td><a href="javascript: imagemLink('./img/Dulce_GustoP.jpg', 'R$ 340,00')">Piccolo</a></td> 
+    <td id="imagens" rowspan="4"><img src="./img/Vazio.jpg"></td>
+    <td id="preco" class="preco" rowspan="4"></td>
+
+</tr>   
+
+<tr>
+    <th class="colTH" rowspan="2">Nespresso</th>
+    <td><a href="javascript: imagemLink('./img/Nespresso_InissiaP.jpg', 'R$ 300,00')">Inissia C40</a> </td>
+    
+</tr>
+
+    <td><a href="javascript: imagemLink('./img/Nespresso_C50P.jpg', 'R$ 400,00')">U C50</a></td>
+    
+
+<tr>
+    <th class="colTH">Senseo</th>
+    <td><a href="javascript: imagemLink('./img/SenseoP.jpg', 'R$ 230,00')">HD7811/96</a></td>
+    
+
+</tr>
+
+
+</table>
+
+<br/><br/><br/>
+
+</section>
+<script src="./js/maquinas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expresso do café</title>
+	<link rel="stylesheet" type="text/css" href="css/sitecafe_p1.css" />
+</head>
+<header>
+<body background="img/Fundo.jpg">
+<div id= "ender" class="ender">
+<img src = "img/Logo_Pequeno.png"/> 
+<p>Avenidade Mochaccino, 10<br> Tel:(21) 1234-5678<br> contato@coffee.com.br</p>
+
+</div> 
+<nav>
+	<ul id="ul-nav">
+		<li><a class="a-menu" href="index.html">Inicial</a></li>
+		<li><a class="a-menu" href="historia.html">Histórias</a></li>
+		<li><a class="a-menu" href="maquinas.html">Máquinas</a></li>
+		<li><a class="a-menu" href="saches.html">Sachês</a></li>
+		<li><a class="a-menu"href="compras.html">Compras</a></li>
+
+	</ul>
+</nav>
+</header>
+<section >
+
+
+<form id="formGeral">
+
+<fieldset class="fsForm"> 
+			<p>Dados de Identificação</p>
+			<label for="nome"><p>Nome:</p></label>
+			<input id="nome" type="text" name="nome"  required autofocus />
+
+			<label for="cpf" class="lab70segCol"><p>Cpf:</p></label>
+			<input id="cpf" type="text" name="cpf" onchange="verificacaoCPF()"/>
+
+			<label for="celular"><p>Telefone:</p></label>
+			<input id="celular" type="tel" name="celular" size= "13" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" >
+
+
+			<label for="email"><p>E-mail:</p></label>
+			<input id="email" type="email" name="email" /> <br/>
+
+			<label for="endereco"><p>Endereço:</p></label>
+			<input id="endereco" type="text" name="endereco" size="50" />
+
+			
+
+</fieldset>
+
+
+<fieldset class="fsResDir">
+	
+	
+	<p>Formas de Pagamento</p>
+				<input id="cartao" type="radio" name="pagamento" value="cartao" /> <label for="cartao"><p>Cartão</p></label>
+				<input id="cheque" type="radio" name="pagamento" value="cheque" /> <label for="cheque"><p>Cheque</p></label>		
+				<input id="dinheiro" type="radio" name="pagamento" value="dinheiro" /> <label for="dinheiro"><p>Dinheiro</p></label>
+	
+	<fieldset>
+		<p>Dados do cartão</p> 
+		<input id="cartaoVisa"type="radio" name="cartaodados"/> <label for="cartaoVisa"><img src="img/visa.png"></label>
+		<input id="cartaoMaster"type="radio" name="cartaodados"/> <label for="cartaoMaster"><img src="img/master.png"></label>
+		<input id="cartaoAmex"type="radio" name="cartaodados"/> <label for="cartaoAmex"><img src="img/amex.png"></label>
+
+		<label for="validade-cartao"><p>Validade:</p></label>
+		 <input type="month" id="validade-cartao" name="validade-cartao"/><br/>
+		
+		 <label for="numero-cartao"><p>Número:</p></label>
+		 <input id="numero-cartao" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" name="numero-cartao" onkeyup="cartoesValida()" /> 
+
+		
+	</fieldset>
+
+
+
+</fieldset>
+
+<fieldset class="fsResEsq">
+	<p>Produtos</p>
+
+		  <label for="maquinas"><p>Máquinas:</p></label>
+
+		  <select name="maquinas" id="maquinas" onclick="maquinasForm()">
+			<option value=""> - - -  </option>
+		    <optgroup label="Dolce Gusto">
+		      <option value="piccolo">Piccolo</option>
+		    </optgroup>
+		    <optgroup label="Nespresso">
+		      <option value="inissia">Inissia C40</option>
+		      <option value="uc50">U C50</option>
+		    </optgroup>
+		    <optgroup label="Senseo">
+			  <option value="classico">HD7811/96</option>
+			</optgroup> 
+		  </select>
+
+
+			
+		  <label for="saches"><p>Sachês:</p></label>
+		  <select name="saches" id="saches" onchange="sachesForm()">
+		    <option value=""> </option>
+
+		    <optgroup label="Dolce Gusto">
+		      <option value="expresso">Expresso</option>
+		      <option value="descafeinado">Descafeinado</option>
+		    </optgroup>
+		    <optgroup label="Nespresso">
+		      <option value="livanto">Livanto</option>
+		      <option value="ristretto">Ristretto</option>
+		      <option value="vanillo">Vanillo</option>
+		    </optgroup>
+		    <optgroup label="Senseo">
+		      <option value="classico">Clássico</option>
+			  <option value="intenso">Intenso</option>
+			</optgroup>
+		  </select>
+	
+	<label for="botao-remover"><p>Selecionados:  </p></label><input id="botao-remover" type="button" value="Remover" onclick="botaoRemover()" /> <textarea id="textarea2" cols="20" rows="3">
+			</textarea>
+			
+			
+	<label for="valor-total"><p>Valor:</p></label><input id="valor-total" type="price" name="valor-total" size="4" />
+
+
+</fieldset>
+
+
+<div id="botoesForm" class="botoesForm">
+<input id="enviar-form" type="button" value="Enviar"/>
+<input id="limpar-form" type="button" value="Limpar"/>
+</div>
+
+</form>
+
+		
+
+
+</section>
+<script src="./js/compras.js"></script>
+</body>
+</html>
